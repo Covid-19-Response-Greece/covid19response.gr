@@ -202,6 +202,15 @@ _____________________________________________________
     font-weight:200;
 }
 
+.card-paragraph-fitting{
+    font-size:16px;
+    line-height:1.4em;
+}
+
+.holeLing{
+    cursor:grab;
+}
+
 hr {
   margin-top: 0;
   margin-bottom: 0;
