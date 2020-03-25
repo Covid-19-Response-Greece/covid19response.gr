@@ -196,6 +196,12 @@ _____________________________________________________
 	0.2 Utility
 -------------------------------------------------- */
 
+.bigLetters{
+    font-size:18px;
+    color:black;
+    font-weight:200;
+}
+
 hr {
   margin-top: 0;
   margin-bottom: 0;
@@ -7897,7 +7903,7 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-lead, .fs-video-hero .hero-content-wrapper .hero-content .hero-lead, .fw-video-hero .hero-content-wrapper .hero-content .hero-lead, .text-slider-hero .hero-content-wrapper .hero-content .hero-lead, .freelancer-hero .hero-content-wrapper .hero-content .hero-lead, .agency2-hero .hero-content-wrapper .hero-content .hero-lead, .animated-hero .hero-content-wrapper .hero-content .hero-lead, .web-app-hero .hero-content-wrapper .hero-content .hero-lead {
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -7954,7 +7960,7 @@ form .input-error-2:focus {
 
 .fs-slide-1 .hero-content .hero-lead {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 800;
   letter-spacing: 5px;
   color: #ececec;
@@ -7981,7 +7987,7 @@ form .input-error-2:focus {
 }
 
 .fs-slide-2 .hero-content .hero-lead {
-  font-size: 6.5em;
+  font-size: 5.5em;
   font-weight: 700;
   letter-spacing: 5px;
   color: #ececec;
@@ -8108,7 +8114,7 @@ form .input-error-2:focus {
 
 .fw-slider-hero .fw-slide-2 .hero-content-wrapper .hero-content .hero-lead {
   margin-bottom: 50px;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
   letter-spacing: 5px;
   color: #ececec;
