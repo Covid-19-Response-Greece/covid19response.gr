@@ -211,7 +211,8 @@
 /* ---- Features ---- */
 @media (max-width: 1260px) {
   .ft-cards-2 .ft-card-item {
-    width: 350px;
+    width: 300px;
+    overflow:hidden;
     height: auto;
     padding-bottom: 50px;
     margin: 0 auto 50px auto;
