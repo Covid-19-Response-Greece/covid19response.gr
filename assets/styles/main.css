@@ -213,19 +213,19 @@ _____________________________________________________
 }
 
 /*Numbering lists*/
-ol {
+.numberList {
     counter-reset: item;    
 }
 
-li {
+.numberListItem {
     display: block
 }
 
-li:before {
+.numberListItem:before {
     content: counters(item, ".") " ";
     counter-increment: item;
-    font-weight:bold;
-    padding-right:0.4em;
+    font-weight: bold;
+    padding-right: 0.4em;
 }
 
 .holeLing{
