@@ -212,6 +212,22 @@ _____________________________________________________
     line-height:1.4em;
 }
 
+/*Numbering lists*/
+ol {
+    counter-reset: item;    
+}
+
+li {
+    display: block
+}
+
+li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    font-weight:bold;
+    padding-right:0.4em;
+}
+
 .holeLing{
     cursor:grab;
 }
