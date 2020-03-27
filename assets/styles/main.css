@@ -196,6 +196,11 @@ _____________________________________________________
 	0.2 Utility
 -------------------------------------------------- */
 
+/* Custom styles here */
+.supporter-icon{
+	margin-bottom: 15px;
+}
+
 .bigLetters{
     font-size:18px;
     color:black;
