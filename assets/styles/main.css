@@ -207,6 +207,10 @@ _____________________________________________________
     font-weight:200;
 }
 
+.bulletSpace{
+    margin: 0 0 15px 0;
+}
+
 .card-paragraph-fitting{
     font-size:16px;
     line-height:1.4em;
