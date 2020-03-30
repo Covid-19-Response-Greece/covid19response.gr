@@ -211,9 +211,13 @@ _____________________________________________________
     margin: 0 0 15px 0;
 }
 
-.card-paragraph-fitting{
-    font-size:16px;
-    line-height:1.4em;
+.bulletSpace1 {
+    margin: 0 0 35px 0;
+}
+
+.card-paragraph-fitting {
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
 /*Numbering lists*/
