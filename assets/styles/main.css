@@ -6636,6 +6636,7 @@ fieldset[disabled] .form-control:hover {
 
 .blog-preview .blog-post {
   background: #fff;
+  height:592px;
 }
 
 /* ---- 18.2 Blog Masonry ---- */
