@@ -241,6 +241,16 @@ _____________________________________________________
     padding-right: 0.4em;
 }
 
+.numberListItem1 {
+    display: block
+}
+
+.numberListItem1:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;        
+    padding-right: 0.4em;
+}
+
 .holeLing{
     cursor:grab;
 }
