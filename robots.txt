@@ -5,4 +5,4 @@ Disallow: /pages/
 Disallow: /elements/
 
 
-Sitemap: https://www.covid19response.gr/sitemap.xml
+Sitemap: https://covid19response.gr/sitemap.xml
