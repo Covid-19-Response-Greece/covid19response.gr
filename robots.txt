@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /Preview/
+Disallow: /assets/contact-form/
+Disallow: /pages/
+Disallow: /elements/
+
+
+Sitemap: https://covid19response.gr/sitemap.xml

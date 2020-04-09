@@ -215,6 +215,11 @@ _____________________________________________________
     margin: 0 0 35px 0;
 }
 
+.sheetFrame{
+    width:100%;
+    height:550px;
+}
+
 .card-paragraph-fitting {
     font-size: 16px;
     line-height: 1.4em;
@@ -233,6 +238,16 @@ _____________________________________________________
     content: counters(item, ".") " ";
     counter-increment: item;
     font-weight: bold;
+    padding-right: 0.4em;
+}
+
+.numberListItem1 {
+    display: block
+}
+
+.numberListItem1:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;        
     padding-right: 0.4em;
 }
 
