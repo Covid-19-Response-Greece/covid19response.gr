@@ -277,10 +277,10 @@
 						separator : ','
 					};
 					// Counter 1
-					var counter1 = new CountUp('count-1', 0, 220, 0, 3, options);
+					var counter1 = new CountUp('count-1', 0, 250, 0, 3, options);
 					counter1.start();
 					// Counter 2
-					var counter2 = new CountUp('count-2', 0, 4, 0, 3, options);
+					var counter2 = new CountUp('count-2', 0, 6, 0, 3, options);
 					counter2.start();
 					// Counter 3
 					var counter3 = new CountUp('count-3', 0, 17, 0, 3, options);
