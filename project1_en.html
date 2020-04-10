@@ -410,22 +410,20 @@
                     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSrAEMPrM7qBzkfHw-iiY8o-zBUgEY1RdtKD-6y5WeT3cWAPkAsntjs6ISf3bdkWXTK_-Y52LQV66U/pubhtml?gid=723918356&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
             </div>
 -->
-            <h3>6. DISTRIBUTION IN HOSPITALS AND MEDICAL ASSOCIATIONS BY COVID 19 RESPONSE GREECE </h3><br />
-            <div class="col-md-8">
-                <div id="mapEn" style="width: auto; height: 500px;"></div>
-            </div>
             <div class="row">
+                <div class="col-md-8">
+                    <div id="mapDivEn" style="width: auto; height: 500px;"></div>
+                </div>
                 <div class="col-md-4">
-                    <li class="bulletSpace">Face shields : <b>25458</b> </li>
-                    <li class="bulletSpace">Hospitals : <b>28</b></li>
-                    <li class="bulletSpace">Medical associations : <b>11</b></li>
-                    <li class="bulletSpace">Others : <b>13</b></li>
+                    <ul>
+                        <li class="bulletSpace">Face shields : <b>25458</b> </li>
+                        <li class="bulletSpace">Hospitals : <b>28</b></li>
+                        <li class="bulletSpace">Medical associations : <b>11</b></li>
+                        <li class="bulletSpace">Others : <b>13</b></li>
+                    </ul>
                     <p>The deliveries of the  face shields of the Covid 19 Response Greece can be found  [<a
                         href="https://www.prusaprinters.org/prints/25857-prusa-protective-face-shield-rc2/files">here</a>].
                 </p>
-                </div>
-                <div class="col-md-8">
-                    <div id="mapEn" style="width: auto; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -938,3 +936,175 @@
 </body>
 
 </html>
+
+<script>
+    //English Map 
+    var mapEn = L.map('mapDivEn').setView([38.711, 23.082], 6);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mapEn);
+
+    //Add markers
+    L.marker([40.629539, 22.960201]).addTo(mapEn)
+        .bindPopup("<b><u>AHEPA Hospital</u></b> <br/> 23/03/2020 - 30 Face Shields <br/>  <small>  Doanted by Rodia Event Decoration </small>");
+
+    L.marker([40.504745, 21.280932]).addTo(mapEn)
+        .bindPopup("<b><u>Kastoria Hospital</u></b> <br/> 23/03/2020 - 50 Face Shields <br/> <small> Donation by Aidplex </small>  <br/> 30/03/2020 - 200 Face Shields  <br/> <small> Donation by Ideas Forward ΙΚΕ  </small>");
+
+    L.marker([40.611608, 22.961895]).addTo(mapEn)
+        .bindPopup("<b><u>Ippokrateio Hospital</u></b> <br/> 27/03/2020 - 35 Face Shields <br/>  <small>  Private Donation</small>");
+
+    L.marker([40.631931, 22.941172]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Thessaloniki</u></b> <br/> 28/03/2020 - 3000 Face Shields <br/>  <small>  Εxpenses paid by the receiving end</small> <br/> 30/03/2020 - 2100 Face Shields  <br/> <small> Εxpenses paid by the receiving end  </small>  <br/> 01/04/2020 - 5000 Face Shields  <br/> <small> Εxpenses paid by the receiving end  </small>");
+
+    L.marker([40.791203, 22.042702]).addTo(mapEn)
+        .bindPopup("<b><u>Edessa Hospital</u></b> <br/> 30/03/2020 - 200 Face Shields <br/>  <small>  Donation by Aidplex</small>");
+
+    L.marker([38.071819, 23.532224]).addTo(mapEn)
+        .bindPopup("<b><u>Thriasio Hospital</u></b> <br/> 30/03/2020 - 30 Face Shields <br/>  <small>  Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([37.977606, 23.747938]).addTo(mapEn)
+        .bindPopup("<b><u>Evangelismos Hospital</u></b> <br/> 30/03/2020 - 30 Face Shields <br/>  <small> Donation by Aidplex</small>");
+
+    L.marker([36.418044, 28.192768]).addTo(mapEn)
+        .bindPopup("<b><u>Rhodes General Hospital Andreas Papandreou </u></b> <br/> 30/03/2020 - 50 Face Shields <br/>  <small> Donation by Aidplex</small> <br/> 01/04/2020 - 150 Face Shields  <br/> <small> Donation by Ideas Forward ΙΚΕ  </small>");
+
+    L.marker([40.990324, 22.867293]).addTo(mapEn)
+        .bindPopup("<b><u>Kilkis Hospital</u></b> <br/> 30/03/2020 - 10 Face Shields <br/>  <small> Donation by Aidplex</small>");
+
+    L.marker([40.802157, 22.045014]).addTo(mapEn)
+        .bindPopup("<b><u>Edessa Municipality</u></b> <br/> 30/03/2020 - 50 Face Shields <br/>  <small> Donation by SOULIS S.A</small>  <br/> 31/03/2020 - 100 Face Shields  <br/> <small> Donation by SOULIS S.A </small>");
+
+    L.marker([40.768194, 22.154981]).addTo(mapEn)
+        .bindPopup("<b><u>Skydra Municipality</u></b> <br/> 31/03/2020 - 50 Face Shields <br/>  <small> Donation by SOULIS S.A</small>");
+
+    L.marker([40.805516, 22.052873]).addTo(mapEn)
+        .bindPopup("<b><u>Pella Chamber of Commerce</u></b> <br/> 31/03/2020 - 1000 Face Shields <br/>  <small> Donation by SOULIS S.A</small>");
+
+    L.marker([39.623375, 19.921558]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Corfu</u></b> <br/> 01/04/2020 - 1300 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([35.335168, 25.131896]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Heraklion</u></b> <br/> 01/04/2020 - 1200 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([38.367195, 21.427168]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Aitoloakarnania</u></b> <br/> 01/04/2020 - 400 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.994525, 22.872674]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Kilkis</u></b> <br/> 01/04/2020 - 400 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([38.016564, 23.665329]).addTo(mapEn)
+        .bindPopup("<b><u>Attikon Hospital (2nd University Clinic of Anesthesiology)</u></b> <br/> 01/04/2020 - 20 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([38.521049, 22.376063]).addTo(mapEn)
+        .bindPopup("<b><u>Amphissa General Hospital (Artificial Kidney Unit)</u></b> <br/> 01/04/2020 - 10 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([40.087995, 21.436862]).addTo(mapEn)
+        .bindPopup("<b><u>Grevena General Hospital</u></b> <br/> 01/04/2020 - 20 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([37.882434, 23.932171]).addTo(mapEn)
+        .bindPopup("<b><u>Municipality of Markopoulo, General Secretariat of Civil Protection</u></b> <br/> 01/04/2020 - 190 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([40.307198, 21.786191]).addTo(mapEn)
+        .bindPopup("<b><u>Mamatsio General Hospital of Kozani</u></b> <br/> 01/04/2020 - 50 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([41.151224, 24.151551]).addTo(mapEn)
+        .bindPopup("<b><u>Pharmacist Association of Drama</u></b> <br/> 01/04/2020 - 10 Face Shields <br/>  <small> Donation by Ideas Forward ΙΚΕ</small>");
+
+    L.marker([36.431051, 28.236616]).addTo(mapEn)
+        .bindPopup("<b><u>Dental Association of Dodecanese </u></b> <br/> 01/04/2020 - 210 Face Shields <br/>  <small> Donation by Aidplex</small>");
+
+    L.marker([40.634167, 22.955885]).addTo(mapEn)
+        .bindPopup("<b><u>G. Gennimatas General Hospital of Thessaloniki - Nurse Service Administration</u></b> <br/> 01/04/2020 - 100 Face Shields <br/>  <small> Donation by Aidplex</small>");
+
+    L.marker([40.845119, 25.874201]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Evros</u></b> <br/> 02/04/2020 - 900 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([39.504021, 20.266716]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Thesprotia</u></b> <br/> 02/04/2020 - 200 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.628192, 22.072994]).addTo(mapEn)
+        .bindPopup("<b><u>Naoussa General Hospital</u></b> <br/> 02/04/2020 - 500 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.642889, 22.913000]).addTo(mapEn)
+        .bindPopup("<b><u>Burns and Plastic surgery department, G. Papanikolaou General Hospital</u></b> <br/> 02/04/2020 - 600 Face Shields <br/>  <small> Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.631040, 23.044819]).addTo(mapEn)
+        .bindPopup("<b><u>General Hospital Papanikolaou A' ICU</u></b> <br/> 02/04/2020 - 100 Face Shields <br/>  <small>Donation by Aidplex</small>");
+
+    L.marker([40.503348, 22.216374]).addTo(mapEn)
+        .bindPopup("<b><u>General Hospital of Veria</u></b> <br/> 03/04/2020 - 900 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.525396, 22.204685]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Imathias</u></b> <br/> 03/04/2020 - 600 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.672803, 22.963414]).addTo(mapEn)
+        .bindPopup("<b><u>424 Army General Hospital</u></b> <br/> 03/04/2020 - 300 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([41.352366, 26.503715]).addTo(mapEn)
+        .bindPopup("<b><u>Didimoteixo General Hospital</u></b> <br/> 04/04/2020 - 600 Face Shields <br/>  <small>Private donation</small>");
+
+    L.marker([40.520939, 21.263127]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Kastoria</u></b> <br/> 06/04/2020 - 1000 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([40.522520, 23.070246]).addTo(mapEn)
+        .bindPopup("<b><u>St George Elderly Care Unit</u></b> <br/> 06/04/2020 - 100 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([39.589816, 19.893430]).addTo(mapEn)
+        .bindPopup("<b><u>Municipality of Kerkyra</u></b> <br/> 06/04/2020 - 400 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([41.142254, 24.879112]).addTo(mapEn)
+        .bindPopup("<b><u>Mobile Surgical Hospital of Xanthi</u></b> <br/> 06/04/2020 - 600 Face Shields <br/>  <small>Private donation</small>");
+
+    L.marker([41.352704, 26.503554]).addTo(mapEn)
+        .bindPopup("<b><u>Mobile Surgical Hospital of Didimoticho</u></b> <br/> 06/04/2020 - 300 Face Shields <br/>  <small>Private donation</small>");
+
+    L.marker([38.623642, 21.409590]).addTo(mapEn)
+        .bindPopup("<b><u>Medical Association of Agrinio</u></b> <br/> 06/04/2020 - 800 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small> <br/> 08/03/2020 - 200 Face Shields  <br/> <small> Εxpenses paid by the receiving end </small>");
+
+    L.marker([37.986316, 23.759998]).addTo(mapEn)
+        .bindPopup("<b><u>1st Health District of Attica</u></b> <br/> 07/04/2020 - 25 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([37.995045, 23.779350]).addTo(mapEn)
+        .bindPopup("<b><u>Sotiria Thoracic Diseases Hospital of Athens</u></b> <br/> 07/04/2020 - 100 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([37.981542, 23.758412]).addTo(mapEn)
+        .bindPopup("<b><u>Médecins Sans Frontières (MSF) Greece</u></b> <br/> 07/04/2020 - 100 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([39.598401, 20.314816]).addTo(mapEn)
+        .bindPopup("<b><u>General Hospital of Filiata</u></b> <br/> 07/04/2020 - 60 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([37.992299, 23.769017]).addTo(mapEn)
+        .bindPopup("<b><u>Hellenic Red Cross, Orthopedic Clinic</u></b> <br/> 07/04/2020 - 150 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([41.494442, 26.534008]).addTo(mapEn)
+        .bindPopup("<b><u>Health Centre of Orestias</u></b> <br/> 07/04/2020 - 25 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([40.631214, 23.045704]).addTo(mapEn)
+        .bindPopup("<b><u>Γενικό Νοσοκομείο Παπανικολάου Πλαστική Χειρουργική & Μ.Ε.Θ. Εγκαυμάτων</u></b> <br/> 02/04/2020 - 25 Face Shields <br/>  <small>Donation by Aidplex</small>");
+
+    L.marker([38.264182, 21.760142]).addTo(mapEn)
+        .bindPopup("<b><u>Olympion Rehabilitation Center & Care</u></b> <br/> 06/04/2020 - 100 Face Shields <br/>  <small>Εxpenses paid by the receiving end</small>");
+
+    L.marker([37.848084, 23.754751]).addTo(mapEn)
+        .bindPopup("<b><u>I.C.U General Hospital of Athens Asklipieio Voulas</u></b> <br/> 07/04/2020 - 150 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([37.979717, 23.751011]).addTo(mapEn)
+        .bindPopup("<b><u>A' Pathology Clinic 417 General Military Hospital NIMTS</u></b> <br/> 07/04/2020 - 75 Face Shields <br/>  <small>Donation by SOULIS S.A</small>");
+
+    L.marker([40.549139, 23.018629]).addTo(mapEn)
+        .bindPopup("<b><u>Social Grocery Store of Thermi</u></b> <br/> 07/04/2020 - 3 Face Shields <br/>  <small>Donation by Aidplex</small>");
+
+    L.marker([38.929020, 22.422613]).addTo(mapEn)
+        .bindPopup("<b><u>General Hospital of Lamiaς</u></b> <br/> 09/04/2020 - 500 Face Shields <br/>  <small>Private donation</small>");
+
+    L.marker([38.899372, 22.434444]).addTo(mapEn)
+        .bindPopup("<b><u>Ιδιώτες Ιατροί Ν.Φθιώτιδας</u></b> <br/> 09/04/2020 - 50 Face Shields <br/>  <small>Private donation</small>");
+</script>
