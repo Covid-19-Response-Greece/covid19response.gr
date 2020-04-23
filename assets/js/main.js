@@ -283,7 +283,7 @@
 					var counter2 = new CountUp('count-2', 0, 7, 0, 3, options);
 					counter2.start();
 					// Counter 3
-					var counter3 = new CountUp('count-3', 0, 18, 0, 3, options);
+					var counter3 = new CountUp('count-3', 0, 19, 0, 3, options);
 					counter3.start();
 					// Counter 4
 					var counter4 = new CountUp('count-4', 0, 102890, 0, 3, options);
