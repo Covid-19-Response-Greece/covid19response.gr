@@ -4014,9 +4014,14 @@ fieldset[disabled] .form-control:hover {
   background: rgba(17, 17, 17, 0.8);
 }
 
+/* Hover effect for feature project section disabled 
 .ft-hover-item .ft-item:hover .content-wrapper {
+   bottom: 100px;
+}*/
+.ft-hover-item .ft-item .content-wrapper {
   bottom: 100px;
 }
+
 
 .ft-hover-item .ft-item:hover .content-wrapper .ft-button {
   opacity: 1;
