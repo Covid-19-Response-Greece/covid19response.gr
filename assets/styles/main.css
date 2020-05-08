@@ -4048,7 +4048,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .ft-hover-item .ft-2 {
-  background: #ccc url(../images/donate.jpg);
+  background: #ccc url(../images/donate.png);
   background-size:cover;
   background-position: 50%;
   -webkit-transition: background-size 0.3s;
