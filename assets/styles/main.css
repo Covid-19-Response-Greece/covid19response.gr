@@ -10448,5 +10448,152 @@ html {
   font-size: 18px;
 }
 
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+  padding: 10px;
+}
+figure a {
+  display: block;
+}
+mark {
+  padding: 0 5px;
+  background-color: #dddddd;
+}
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	position: relative;
+	height: 100%;
+	box-shadow: 0px 2px 6px 0px rgba(204,209,217,.5);
+	border: 1px solid #E6E9ED;
+}
+
+.courses {
+	margin-top: 30px;
+  margin-bottom: 60px;
+  
+}
+.course-item {
+	width: 60%;
+	padding-right: 1%;
+	padding-left: 1%;
+	margin-bottom: 30px;
+
+	/* ensuring proper layout*/
+	float: left;
+}
+.course-item a {
+	color: black;
+}
+.course-heading {
+	font-weight: 500;
+	font-size: 12px;
+	color: #AAB2BD;
+	text-transform: uppercase;
+	text-align: center;
+}
+.course-info {
+	padding: 7%;
+  min-height: 140px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+.course-info h4 {
+  font-size: medium;
+}
+.course-topic {
+	font-weight: 500;
+	color: #AAB2BD;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.course-topic.photo {
+	color: #673AB7;
+}
+.course-topic.webdesign {
+	color: #009688;
+}
+.course-topic.computer {
+	color: #2196F3;
+}
+.course-topic.code {
+	color: #4CAF50;
+}
+.course-topic.design {
+	color: #F44336;
+}
+.course-title {
+	font-weight: 500;
+	font-size: 14px;
+	margin: 0 0 5%;
+}
+.course-meta {
+	color: #AAB2BD;
+	font-weight: 300;
+	font-size: 11px;
+	position: absolute;
+	left: 7%;
+	bottom: 7%;
+}
+.course-duration:before {
+	display: inline-block;
+	content: "•";
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.course-caption {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	font-size: 18px;
+	color: #AAB2BD;
+}
+
+/*Customizing INterface*/
+
+.flickity-prev-next-button.previous {
+  left: -30px;
+  background-color: #434A54
+}
+.flickity-prev-next-button.next {
+  right: -30px;
+  background-color: #434A54
+}
+.flickity-prev-next-button .arrow {
+  fill: #F5F7FA;
+  background-color: #434A54
+}
+.flickity-prev-next-button {
+  background-color: #434A54;
+  width: 38px;
+  height: 38px;
+}
+.flickity-prev-next-button:hover {
+  background-color: #656D78;
+}
+.course-date{
+  margin-top: 10px;
+  color: gray;
+}
 
 /*# sourceMappingURL=main.css.map */
